@@ -1,0 +1,9 @@
+# Code and exhibit provenance
+
+This individual repository packages the main `Data-Parsing/` pipeline from Team 3's replication project: https://github.com/matthewstar05/ECON5560-Team3. That URL identifies the pre-existing team source, not the GitHub account used to create or publish this individual assignment. This assignment is published only as `matthew-suban-slo/econ5560-replication-suban`.
+
+The local team subtree was introduced into MSQE_Stuff by commit `230529f45eb335175f9cd113b50c7db608b869ef`, which names upstream subtree commit `33db22d100038730253afbd60576a0e01602a271`. Numbered analysis scripts, `common.py`, the optional R check and notebook, dashboard template, historical replication log, and the published exhibit images are inherited and attributed to that team project and, for the original exhibits, Eppink et al. (2016).
+
+Packaging changes: add a root master script with subprocess isolation, timing, environment reporting, and essential output checks; replace local layout assumptions with repository-relative raw-data, outputs, and logs paths; direct the generated dashboard into outputs; make the optional R check resolve its own location; clear saved notebook outputs and adjust its data paths; record a new verified raw-data download; pin and freeze Python dependencies; and provide assignment-specific documentation. The model equations, sample-selection rules, published comparison targets, primary simulation settings, and sensitivity seeds are retained from the team pipeline.
+
+The historical replication log is included as background, not a claim that every past run was repeated here. The complete newly captured pipeline is the one documented in `logs/run_log.txt` and `logs/FRESH_CLONE.md`. The older simplified teaching pipeline and administrative/team documents are not part of this main analysis package.
