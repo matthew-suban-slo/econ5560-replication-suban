@@ -33,7 +33,7 @@ For the assignment's fresh-clone check, delete everything **inside** `outputs/` 
 
 ## Software and packages
 
-The verified environment uses Python **3.12.12** on macOS. Direct requirements are pinned in `requirements.txt`: NumPy **2.0.2**, pandas **2.3.3**, SciPy **1.13.1**, statsmodels **0.14.6**, and Matplotlib **3.9.4**. Their exact observed versions appear at the end of the run log; `logs/requirements.txt` is the actual `python -m pip freeze` output, including transitive packages. To recreate the recorded full package set, install from that file instead of the direct requirements. A virtual environment keeps these separate from other coursework.
+The verified environment uses Python **3.12.12** on macOS. Direct requirements are pinned in `requirements.txt`: NumPy **1.26.4**, pandas **2.3.3**, SciPy **1.13.1**, statsmodels **0.14.6**, and Matplotlib **3.9.4**. Their exact observed versions appear at the end of the run log; `logs/requirements.txt` is the actual `python -m pip freeze` output, including transitive packages. To recreate the recorded full package set, install from that file instead of the direct requirements. A virtual environment keeps these separate from other coursework.
 
 The walkthrough notebook is optional and is not needed by `run_all.py`; install `requirements-notebook.txt` to use it. The optional independent R check requires R and `survival`; run `Rscript scripts/crosscheck_clogit.R` after the Python pipeline. This optional check is outside the recorded Python run and is not claimed as newly verified here.
 
